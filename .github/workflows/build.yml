@@ -30,10 +30,10 @@ jobs:
           GRADLE_BUILD_ACTION_CACHE_DEBUG_ENABLED: true
 
       - name: Unit tests
-        run: ./gradlew test --stacktrace
+        run: ./gradlew test --stacktrace --info
 
       - name: All checks
-        run: ./gradlew check --stacktrace
+        run: ./gradlew check --stacktrace --info
 
       - name: Build
-        run: ./gradlew build --stacktrace
+        run: ./gradlew build --stacktrace --info
